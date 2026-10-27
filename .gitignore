@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+skills/story-stock/assets/starter/dist/
+skills/story-stock/assets/starter/check/
+dist/
+check/

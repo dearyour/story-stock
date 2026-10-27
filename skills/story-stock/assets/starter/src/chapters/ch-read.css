@@ -1,0 +1,124 @@
+/* 09 READ — 부록(보통 문서 흐름) */
+#ch-read { height: auto; padding: 120px var(--gut) 140px; background: linear-gradient(var(--void), var(--bg) 240px); }
+#ch-read .rd { max-width: 1320px; margin: 0 auto; }
+#ch-read .rd-head { max-width: 980px; }
+#ch-read .rd-head .body { max-width: 46em; margin-bottom: 24px; }
+#ch-read .rd-runs { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+#ch-read .rd-run { padding: 18px 20px; border-radius: 16px; background: var(--s1); border: 1px solid var(--line2); border-top: 3px solid var(--rc); }
+#ch-read .rd-run-claude { --rc: var(--run-c); }
+#ch-read .rd-run-gpt { --rc: var(--run-g); }
+#ch-read .rt-claude { color: #f0a587; }
+#ch-read .rt-gpt { color: #6fd6b5; }
+#ch-read .rd-run dl { display: grid; gap: 6px; margin: 12px 0 0; }
+#ch-read .rd-run dl div { display: grid; grid-template-columns: 96px 1fr; gap: 12px; }
+#ch-read .rd-run dt { font: 600 13px/1.6 var(--mono); color: var(--ink3); }
+#ch-read .rd-run dd { margin: 0; font: 500 16px/1.5 var(--sans); color: var(--ink); }
+#ch-read .rd-run dd.mono { font: 500 14px/1.6 var(--mono); }
+#ch-read .rd-common { margin-top: 14px; font: 500 14px/1.7 var(--sans); color: var(--ink3); }
+
+#ch-read .rd-gloss { margin-top: 56px; padding: 26px 28px; border-radius: 18px; background: var(--s1); border: 1px solid var(--line); }
+#ch-read .rd-gloss h3 { font: 800 20px/1.3 var(--sans); color: var(--ink); margin-bottom: 14px; letter-spacing: -0.02em; }
+#ch-read .rd-gloss h3 + dl + h3 { margin-top: 28px; }
+#ch-read .rd-gloss dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 32px; margin: 0; }
+#ch-read .rd-gloss dl div { display: grid; grid-template-columns: 150px 1fr; gap: 14px; padding: 8px 0; border-top: 1px solid var(--line); }
+#ch-read .rd-gloss dt { font: 700 15px/1.6 var(--sans); color: var(--amber); }
+#ch-read .rd-gloss dd { margin: 0; font: 500 16px/1.7 var(--sans); color: var(--ink2); }
+#ch-read .rd-scale { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+#ch-read .rd-scale li { display: grid; gap: 4px; padding: 14px; border-radius: 12px; background: var(--s2); border: 1px solid var(--line); }
+#ch-read .rd-scale li.is-pick { border-color: var(--signal); }
+#ch-read .rd-scale b { font: 800 17px/1.2 var(--sans); color: var(--ink); }
+#ch-read .rd-scale span { font: 600 13px/1 var(--mono); color: var(--ink3); }
+#ch-read .rd-scale em { font: 500 14px/1.5 var(--sans); font-style: normal; color: var(--ink2); }
+
+#ch-read .rd-toc { position: sticky; top: 60px; z-index: 6; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 48px 0 8px; padding: 10px 0 12px; background: var(--bg); box-shadow: 0 0 0 100vmax var(--bg); clip-path: inset(0 -100vmax); border-bottom: 1px solid transparent; border-image: linear-gradient(var(--line2), var(--line2)) 0 0 1 0 / 0 0 1px 0 / 0 100vmax; }
+#ch-read .rd-toc a { display: inline-flex; align-items: center; gap: 6px; padding: 7px 11px; border-radius: 999px; border: 1px solid var(--line2); font: 600 14px/1 var(--sans); color: var(--ink2); text-decoration: none; transition: border-color 0.2s, color 0.2s; }
+#ch-read .rd-toc a span { font: 700 13px/1 var(--mono); color: var(--signal); }
+#ch-read .rd-toc a:hover { border-color: var(--edge); color: var(--ink); }
+#ch-read .rd-all { margin-left: auto; min-height: 36px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--signal); background: rgba(255, 90, 42, 0.1); color: var(--ink); font: 700 14px/1 var(--sans); cursor: pointer; }
+
+#ch-read .rd-agent { padding: 48px 0 8px; border-bottom: 1px solid var(--line); scroll-margin-top: 190px; }
+#ch-read .rd-agent-h { display: grid; grid-template-columns: auto 1fr; gap: 4px 18px; align-items: baseline; margin-bottom: 20px; }
+#ch-read .rd-no { grid-row: span 3; display: grid; gap: 4px; font: 700 13px/1.2 var(--mono); color: var(--ink3); letter-spacing: 0.08em; }
+#ch-read .rd-no span { font: 800 40px/1 var(--mono); color: transparent; -webkit-text-stroke: 1.2px rgba(239, 234, 220, 0.4); letter-spacing: -0.04em; }
+#ch-read .rd-agent-h h3 { font: 800 28px/1.25 var(--sans); letter-spacing: -0.03em; color: var(--ink); display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; }
+#ch-read .rd-agent-h h3 em { font: 600 15px/1 var(--mono); font-style: normal; color: var(--ink3); }
+#ch-read .rd-deep, #ch-read .rd-quick { font: 700 13px/1 var(--mono); font-style: normal; padding: 5px 8px; border-radius: 6px; }
+#ch-read .rd-deep { background: rgba(139, 108, 255, 0.18); color: #c4b5fd; }
+#ch-read .rd-quick { background: var(--s2); color: var(--ink3); }
+#ch-read .rd-job { font: 500 17px/1.7 var(--sans); color: var(--ink2); }
+
+#ch-read .rd-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+#ch-read .rd-col { min-width: 0; padding: 18px 20px; border-radius: 18px; background: var(--s1); border: 1px solid var(--line); border-top: 3px solid var(--rc); }
+#ch-read .rd-claude { --rc: var(--run-c); }
+#ch-read .rd-gpt { --rc: var(--run-g); }
+#ch-read .rd-col-h { display: flex; align-items: center; gap: 12px; }
+#ch-read .rd-rate { margin-left: auto; padding: 6px 11px; border-radius: 999px; font: 700 14px/1 var(--sans); background: var(--s3); color: var(--ink); }
+#ch-read .rd-rate[data-tone="ok"] { background: rgba(126, 224, 161, 0.16); color: var(--mint); }
+#ch-read .rd-rate[data-tone="bad"], #ch-read .rd-rate[data-tone="err"] { background: rgba(255, 129, 117, 0.16); color: var(--err); }
+#ch-read .rd-rate[data-tone="wait"] { background: rgba(255, 194, 74, 0.16); color: var(--amber); }
+#ch-read .rd-gist { margin: 12px 0 6px; font: 700 18px/1.55 var(--sans); color: var(--ink); letter-spacing: -0.01em; }
+#ch-read .rd-claims { display: grid; gap: 0; }
+#ch-read .rd-claim { padding: 14px 0; border-top: 1px solid var(--line); }
+#ch-read .rd-claim blockquote { margin: 0 0 10px; padding-left: 12px; border-left: 2px solid var(--rc); font: 500 16px/1.75 var(--sans); color: var(--ink2); }
+#ch-read .rd-claim blockquote::before { content: "“"; }
+#ch-read .rd-claim blockquote::after { content: "”"; }
+#ch-read .rd-plain { display: grid; grid-template-columns: 112px 1fr; gap: 12px; font: 500 16px/1.75 var(--sans); color: var(--ink); }
+#ch-read .rd-plain b { font: 700 13px/2.1 var(--mono); color: var(--signal); white-space: nowrap; }
+#ch-read .rd-full { margin-top: 10px; border-top: 1px solid var(--line); }
+#ch-read .rd-full summary { display: flex; align-items: center; gap: 10px; min-height: 46px; cursor: pointer; font: 700 15px/1.3 var(--sans); color: var(--ink); list-style: none; }
+#ch-read .rd-full summary::-webkit-details-marker { display: none; }
+#ch-read .rd-full summary::before { content: "+"; display: grid; place-items: center; width: 24px; height: 24px; border-radius: 6px; border: 1px solid var(--line2); font: 700 15px/1 var(--mono); color: var(--signal); }
+#ch-read .rd-full[open] summary::before { content: "−"; }
+#ch-read .rd-full summary span { font: 500 13px/1 var(--mono); color: var(--ink3); }
+#ch-read .rd-doc { padding: 6px 2px 14px; font: 500 16px/1.8 var(--sans); color: var(--ink2); }
+#ch-read .rd-doc h3, #ch-read .rd-doc h4, #ch-read .rd-doc h5 { margin: 18px 0 8px; color: var(--ink); letter-spacing: -0.02em; }
+#ch-read .rd-doc h3 { font: 800 19px/1.4 var(--sans); }
+#ch-read .rd-doc h4 { font: 800 17px/1.4 var(--sans); }
+#ch-read .rd-doc h5 { font: 700 16px/1.4 var(--sans); }
+#ch-read .rd-doc p { margin: 8px 0; }
+#ch-read .rd-doc b { color: var(--ink); }
+#ch-read .rd-doc ul, #ch-read .rd-doc ol { margin: 6px 0; padding-left: 20px; }
+#ch-read .rd-doc ul { list-style: disc; }
+#ch-read .rd-doc ol { list-style: decimal; }
+#ch-read .rd-doc li { margin: 3px 0; }
+#ch-read .rd-doc code { font-size: 13px; white-space: normal; }
+#ch-read .rd-table { margin: 10px 0; overflow-x: auto; border-radius: 10px; border: 1px solid var(--line); }
+#ch-read .rd-table table { width: 100%; border-collapse: collapse; font: 500 14px/1.5 var(--sans); }
+#ch-read .rd-table th { padding: 8px 10px; text-align: left; background: var(--s2); color: var(--ink); font-weight: 700; white-space: nowrap; }
+#ch-read .rd-table td { padding: 8px 10px; border-top: 1px solid var(--line); color: var(--ink2); vertical-align: top; }
+#ch-read .rd-table td.n { text-align: right; font-family: var(--mono); font-size: 13px; white-space: nowrap; }
+#ch-read .rd-foot { margin-top: 48px; display: grid; gap: 10px; font: 500 15px/1.7 var(--sans); color: var(--ink3); }
+#ch-read .rd-foot b { color: var(--ink2); margin-right: 8px; }
+
+@media (max-width: 820px) {
+  #ch-read { padding: 90px 16px 100px; }
+  #ch-read .rd-runs, #ch-read .rd-cols, #ch-read .rd-gloss dl { grid-template-columns: 1fr; }
+  #ch-read .rd-gloss { padding: 18px 16px; }
+  #ch-read .rd-gloss dl div { grid-template-columns: 1fr; gap: 2px; }
+  #ch-read .rd-scale { grid-template-columns: 1fr; }
+  #ch-read .rd-toc { top: 56px; flex-wrap: nowrap; overflow-x: auto; }
+  #ch-read .rd-toc a { flex: none; }
+  #ch-read .rd-all { flex: none; }
+  #ch-read .rd-agent-h { grid-template-columns: 1fr; }
+  #ch-read .rd-no { grid-row: auto; display: flex; align-items: baseline; gap: 10px; }
+  #ch-read .rd-no span { font-size: 30px; }
+  #ch-read .rd-agent-h h3 { font-size: 23px; }
+  #ch-read .rd-col { padding: 16px 14px; }
+  #ch-read .rd-plain { grid-template-columns: 1fr; gap: 2px; }
+  #ch-read .rd-plain b { line-height: 1.6; }
+}
+/* 원문 구간에서는 HUD와 목차 칩이 한 장의 불투명한 띠가 된다: HUD 배경을 채우고(장면 구간의 HUD는 그대로),
+   목차는 화면 폭 전체로 같은 색을 깔고 아래에 가는 선을 둔다. 본문이 띠 사이로 비치지 않는다. */
+html.is-reading .hud { background: var(--bg); }
+.is-reading .readout { opacity: 0; }
+.readout { transition: opacity 0.3s; }
+@media (max-width: 820px) {
+  #ch-read .rd-toc { top: 56px; }
+  #ch-read .rd-agent { scroll-margin-top: 130px; }
+}
+#ch-read .rd-kick { font: 700 13px/1.4 var(--mono); letter-spacing: 0.18em; color: var(--signal); margin-bottom: 14px; }
+#ch-read .rd-h { font: 900 clamp(34px, 4.2vw, 64px)/1.1 var(--sans); letter-spacing: -0.045em; color: var(--ink); margin-bottom: 18px; }
+#ch-read .rd-h em { font-style: normal; color: var(--signal); }
+#ch-read .rd-lead { font: 500 17px/1.82 var(--sans); color: var(--ink2); max-width: 46em; margin-bottom: 24px; }
+#ch-read .rt { display: inline-flex; align-items: center; gap: 7px; font: 700 13px/1 var(--mono); letter-spacing: 0.02em; }
+#ch-read .rt i { width: 9px; height: 9px; border-radius: 3px; background: currentColor; box-shadow: 0 0 8px currentColor; }

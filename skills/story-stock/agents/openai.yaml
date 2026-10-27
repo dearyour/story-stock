@@ -1,0 +1,4 @@
+interface:
+  display_name: "story-stock"
+  short_description: "주식 분석 보고서를 주장마다 화면 전체 모션그래픽 + 쉬운 말 + 원문으로 읽는 스크롤 스토리 페이지"
+  default_prompt: "$story-stock를 사용해 이 주식 분석 보고서(들)를 한국어 쉬운 말 스크롤 스토리 HTML로 만들어줘. 주장마다 화면 전체 모션그래픽 장면 하나, 아래에 쉬운 말과 원문 인용. 보고서가 두 편이면 어디서 같고 왜 갈렸는지 보여 주고, 숫자는 보고서에서만 가져와 verify-numbers · verify-quotes를 통과시키고, 1440 · 1280 · 390 · 동작 줄이기 캡처를 직접 확인해줘."
