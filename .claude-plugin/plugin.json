@@ -1,6 +1,6 @@
 {
   "name": "story-stock",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Turns stock-analysis reports into a Korean plain-language scroll story: one full-bleed, scroll-driven Canvas 2D motion-graphic scene per claim, a short caption and the original quote below — and, for two reports on the same ticker and date from different models, where they agree and why they split (single HTML).",
   "author": {
     "name": "dearyour",

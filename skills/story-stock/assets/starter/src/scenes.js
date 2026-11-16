@@ -12,8 +12,8 @@ const SPREAD = [0.3, 0.2, 0.14, 0.1, 0.1, 0.62, 0.74, 0.82, 0.88, 0.94, 1];
 scene({
   id: "s-open", len: 360, name: "두 갈래",
   beats: [
-    { at: 0, tag: "TradingAgents · SNDK · 기준일 2026-10-26", plain: "같은 질문을 두 AI에게 따로 물었습니다. 종목, 날짜, 에이전트 11명, 데이터 창구까지 모두 같게.", q: { text: "보고서 머리말 — 분석 기준일 2026-10-26 · 분석가: 시장, 뉴스, 재무 · 리서치 토론 1라운드, 리스크 토론 1라운드" } },
-    { at: 0.64, tag: "최종 등급", plain: "결론은 갈렸습니다. Claude는 '보유 유지', GPT는 '비중 축소'. AI가 만든 분석이며 투자 권유가 아닙니다.", q: { text: "최종 등급 — Claude: 보유 유지 · Hold / GPT: 비중 축소 · Underweight" } },
+    { at: 0, tag: "TradingAgents · SNDK · 기준일 2026-10-26", plain: "같은 질문을 두 AI에게 따로 물었어요. 종목, 날짜, 에이전트 11명, 데이터 창구까지 모두 같아요.", q: { text: "보고서 머리말 — 분석 기준일 2026-10-26 · 분석가: 시장, 뉴스, 재무 · 리서치 토론 1라운드, 리스크 토론 1라운드" } },
+    { at: 0.64, tag: "최종 등급", plain: "Claude는 '보유 유지', GPT는 '비중 축소'로 결론이 갈렸어요. AI가 만든 분석이고, 투자 권유가 아니에요.", q: { text: "최종 등급 — Claude: 보유 유지 · Hold / GPT: 비중 축소 · Underweight" } },
   ],
   draw(g, p) {
     const { G, m } = g;
@@ -112,8 +112,8 @@ scene({
 scene({
   id: "s-slide", len: 300, name: "천장 아래로",
   beats: [
-    { at: 0, tag: "Claude · 시장 분석가", plain: "한 달 남짓 사이 가격이 1,887에서 1,255.58까지 미끄러졌습니다.", q: Q("claude", "market", "9월 22일 종가 1,887.04") },
-    { at: 0.52, tag: "GPT · 시장 분석가", plain: "단기(10일)·중기(50일) 평균선이 모두 머리 위에 있습니다. 두 AI 모두 '추세는 약하다'고 봤습니다.", q: Q("gpt", "market", "2026-10-26 SNDK 종가는") },
+    { at: 0, tag: "Claude · 시장 분석가", plain: "한 달 남짓 만에 가격이 1,887에서 1,255.58까지 미끄러졌어요.", q: Q("claude", "market", "9월 22일 종가 1,887.04") },
+    { at: 0.52, tag: "GPT · 시장 분석가", plain: "두 AI 모두 추세가 약하다고 봤어요. 단기(10일)·중기(50일) 평균선이 모두 가격보다 위에 있어요.", q: Q("gpt", "market", "2026-10-26 SNDK 종가는") },
   ],
   draw(g, p) {
     const { G, m } = g;
@@ -164,8 +164,8 @@ scene({
 scene({
   id: "s-rsi", len: 260, name: "RSI 바늘",
   beats: [
-    { at: 0, tag: "Claude · 시장 분석가", plain: "RSI는 최근 오른 힘과 내린 힘을 0~100으로 잰 바늘입니다. 9월 말 50대에서 30 근처까지 떨어졌습니다.", q: Q("claude", "market", "RSI 32.12: 10월 16일") },
-    { at: 0.56, tag: "GPT · 시장 분석가", plain: "30 아래는 '많이 팔렸다'는 구간. 하지만 두 AI 모두 '바닥이라는 뜻은 아니다'라고 했습니다.", q: Q("gpt", "market", "검증된 RSI는 32.12") },
+    { at: 0, tag: "Claude · 시장 분석가", plain: "RSI가 9월 말 50대에서 30 근처까지 떨어졌어요. RSI는 최근 오른 힘과 내린 힘을 0~100으로 재요.", q: Q("claude", "market", "RSI 32.12: 10월 16일") },
+    { at: 0.56, tag: "GPT · 시장 분석가", plain: "30 아래는 많이 팔렸다는 신호예요. 그래도 두 AI 모두 바닥은 아니라고 했어요.", q: Q("gpt", "market", "검증된 RSI는 32.12") },
   ],
   draw(g, p) {
     const { G, m } = g;
@@ -226,8 +226,8 @@ scene({
 scene({
   id: "s-shake", len: 300, name: "하루 흔들림",
   beats: [
-    { at: 0, tag: "Claude · 시장 분석가", plain: "이 주식은 하루 평균 93.48(가격의 약 7.4%)씩 흔들립니다.", q: Q("claude", "market", "ATR 93.48: 종가 대비") },
-    { at: 0.5, tag: "Claude · 약세 연구원", plain: "그래서 1,229에 손절을 걸면(약 2% 아래) 평범한 하루에도 걸린다는 반박이 나왔습니다.", q: Q("claude", "bear", "종가 1,255에서 1,229까지") },
+    { at: 0, tag: "Claude · 시장 분석가", plain: "이 주식은 하루에 평균 93.48(가격의 약 7.4%)씩 흔들려요.", q: Q("claude", "market", "ATR 93.48: 종가 대비") },
+    { at: 0.5, tag: "Claude · 약세 연구원", plain: "그래서 1,229(약 2% 아래)에 손절을 걸면 평범한 하루에도 걸린다고 반박했어요.", q: Q("claude", "bear", "종가 1,255에서 1,229까지") },
   ],
   draw(g, p) {
     const { G, m } = g;
@@ -291,9 +291,9 @@ scene({
 scene({
   id: "s-wire", len: 340, name: "1,135 인계철선",
   beats: [
-    { at: 0, tag: "GPT · 리서치 매니저", plain: "줄이는 크기는 같습니다. 평소 몫(표준 비중)의 약 50%. GPT는 지금 줄입니다.", q: Q("gpt", "manager", "SNDK 보유분은 표준 배분의 약 50%") },
-    { at: 0.34, tag: "Claude · 리서치 매니저", plain: "Claude는 1,135에 줄을 쳐 두었습니다. 지금은 그대로 둡니다.", q: Q("claude", "manager", "종가가 1,135를 이탈하면") },
-    { at: 0.66, tag: "Claude · 포트폴리오 매니저", plain: "종가가 그 줄 아래로 떨어지는 순간 Claude도 50%로. 시작부터 줄 아래로 열려도 바로 실행합니다.", q: Q("claude", "pm", "종가가 1,135를 밑돌면") },
+    { at: 0, tag: "GPT · 리서치 매니저", plain: "줄이는 크기는 둘 다 평소 몫(표준 비중)의 약 50%예요. GPT는 지금 줄여요.", q: Q("gpt", "manager", "SNDK 보유분은 표준 배분의 약 50%") },
+    { at: 0.34, tag: "Claude · 리서치 매니저", plain: "Claude는 1,135에 줄을 쳐 뒀어요. 지금은 그대로 둬요.", q: Q("claude", "manager", "종가가 1,135를 이탈하면") },
+    { at: 0.66, tag: "Claude · 포트폴리오 매니저", plain: "종가가 그 줄 아래로 떨어지면 Claude도 50%로 줄여요. 장이 줄 아래에서 시작해도 바로 줄여요.", q: Q("claude", "pm", "종가가 1,135를 밑돌면") },
   ],
   draw(g, p) {
     const { G, m } = g;
@@ -337,7 +337,7 @@ scene({
       D.rect(g, bx, byy - 14, bw * share, 20, { color: col, r: 6, glow: 16 });
       D.text(g, share > 0.75 ? "100%" : run === "gpt" ? "약 50%" : "50%", bx + bw + 10, byy + 2, { px: m ? 16 : 22, w: 900, fam: "mono", color: col });
       if (!m) {
-        const note = run === "gpt" ? "지금 줄인다" : ghost > 0.98 ? "줄을 넘는 순간 줄인다" : "지금은 그대로";
+        const note = run === "gpt" ? "지금 줄여요" : ghost > 0.98 ? "줄을 넘으면 줄여요" : "지금은 그대로 둬요";
         D.text(g, note, bx, byy + 34, { px: 15, w: 800, color: C_.ink2 });
       }
     });
@@ -349,8 +349,8 @@ const TIER = SCALE.map((s) => s.ko);
 scene({
   id: "s-land", len: 280, name: "한 칸 차이",
   beats: [
-    { at: 0, tag: "최종 등급", plain: "다섯 칸 중 한 칸 차이.", q: { text: "등급 척도 — 매수(Buy) · 비중 확대(Overweight) · 보유 유지(Hold) · 비중 축소(Underweight) · 매도(Sell)" } },
-    { at: 0.5, tag: "GPT · 포트폴리오 매니저", plain: "Claude는 지금 가진 만큼 둡니다(종가 1,135 아래면 50%). GPT는 평소 몫의 약 50%로 줄입니다. 둘 다 '전부 팔라'는 아닙니다.", q: Q("gpt", "pm", "SNDK는 전량 매도보다") },
+    { at: 0, tag: "최종 등급", plain: "다섯 칸 중 딱 한 칸 차이예요.", q: { text: "등급 척도 — 매수(Buy) · 비중 확대(Overweight) · 보유 유지(Hold) · 비중 축소(Underweight) · 매도(Sell)" } },
+    { at: 0.5, tag: "GPT · 포트폴리오 매니저", plain: "Claude는 그대로 두고(종가 1,135 아래면 50%), GPT는 평소 몫의 약 50%로 줄여요. 둘 다 전부 팔라는 말은 아니에요.", q: Q("gpt", "pm", "SNDK는 전량 매도보다") },
   ],
   draw(g, p) {
     const { G, m } = g;

@@ -42,7 +42,7 @@ const ChRead = (() => {
       <header class="rd-head">
         <p class="rd-kick">원문 · READ</p>
         <h2 class="rd-h">에이전트별 <em>전문 번역</em>과<br>주장 해설</h2>
-        <p class="rd-lead">두 보고서를 에이전트 11명 순서로 나란히 옮겼습니다. 칸마다 등급, 한 줄 요약, 주요 주장(원문 → 쉬운 말)이 있고, 보고서 전문은 접어 두었습니다. 영어로 남아 있던 제목 · 라벨 · 등급 · 최종 제안 문장은 한국어로 옮겼고, 숫자와 나머지 문장은 원문 그대로입니다.</p>
+        <p class="rd-lead">두 보고서를 에이전트 11명 순서로 나란히 옮겼어요. 칸마다 등급, 한 줄 요약, 주요 주장(원문 → 쉬운 말)이 있고, 보고서 전문은 접어 뒀어요. 영어로 남아 있던 제목 · 라벨 · 등급 · 최종 제안 문장만 한국어로 옮겼고, 숫자와 나머지 문장은 원문 그대로예요.</p>
         <div class="rd-runs">${runCard("claude")}${runCard("gpt")}</div>
         <p class="rd-common">공통 설정 · TradingAgents · 분석 기준일 2026-10-26 · 분석가: 시장 · 뉴스 · 재무 · 리서치 토론 1라운드 · 리스크 토론 1라운드 · 데이터: 가격·지표 yfinance, 재무 SEC EDGAR · yfinance, 뉴스 yfinance, 거시 FRED, 예측시장 Polymarket</p>
       </header>
@@ -56,8 +56,8 @@ const ChRead = (() => {
         <button type="button" class="rd-all" data-all>전문 모두 펼치기</button></nav>
       ${AGENTS.map(agent).join("")}
       <footer class="rd-foot">
-        <p><b>출처</b> TradingAgents — TauricResearch의 오픈소스 멀티 에이전트 LLM 트레이딩 프레임워크(Apache-2.0). 보고서는 공개 시장 데이터를 AI가 분석한 것입니다.</p>
-        <p><b>원문</b> 두 실행이 남긴 에이전트별 보고서(markdown)를 옮겼습니다. 위의 그림은 보고서에 적힌 숫자와 문장만으로 그렸고, 흔들림을 보여 주는 선 하나만 예시입니다.</p>
+        <p><b>출처</b> TradingAgents는 TauricResearch가 만든 오픈소스 멀티 에이전트 LLM 트레이딩 프레임워크예요(Apache-2.0). 보고서는 AI가 공개 시장 데이터를 분석해서 썼어요.</p>
+        <p><b>원문</b> 두 실행이 남긴 에이전트별 보고서(markdown)를 옮겼어요. 위 그림은 보고서에 적힌 숫자와 문장만으로 그렸고, 흔들림을 보여 주는 선 하나만 예시예요.</p>
       </footer>
     </div>`;
     const all = root.querySelector("[data-all]");
