@@ -17,7 +17,6 @@ function fillCap(cap, beat) {
   const tagDot = run ? "<i></i>" : "";
   setHTML($(".cap-tag", cap), `${tagDot}${esc(beat.tag)}`);
   setHTML($(".cap-plain", cap), esc(beat.plain));
-  setHTML($(".cap-q", cap), qHtml(q.q || q.text || ""));
   if (!Engine.reduce) {
     cap.classList.remove("is-swap");
     void cap.offsetWidth;
@@ -30,7 +29,7 @@ SCENES.forEach((def, idx) => {
   const sec = el(`<section class="sc" id="${def.id}" style="--len:${def.len}" aria-label="${two(idx + 1)} ${esc(def.name)}">
       <div class="st">
         <canvas aria-hidden="true"></canvas>
-        <div class="cap"><p class="cap-tag"></p><p class="cap-plain"></p><blockquote class="cap-q"></blockquote></div>
+        <div class="cap"><p class="cap-tag"></p><p class="cap-plain"></p></div>
         <div class="sr-only">${def.beats.map((b) => `<p>${esc(b.plain)}</p>`).join("")}</div>
       </div>
     </section>`);
