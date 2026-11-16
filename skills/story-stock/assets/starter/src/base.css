@@ -58,7 +58,9 @@ code { font: 500 0.88em/1 var(--mono); background: rgba(243, 239, 228, 0.08); bo
 .hud-scene b { margin-left: 0.7em; color: var(--signal); letter-spacing: 0.04em; font-family: var(--sans); font-weight: 800; }
 .hud-link { display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 999px; font: 700 13px/1 var(--mono); letter-spacing: 0.08em; color: var(--ink2); text-decoration: none; background: rgba(8, 8, 10, 0.7); border: 1px solid var(--line2); }
 .hud-link:hover { color: var(--ink); border-color: var(--edge); }
-.rail { position: fixed; z-index: 50; right: 14px; top: 50%; transform: translateY(-50%); }
+.rail { position: fixed; z-index: 50; right: 14px; top: 72px; bottom: 16px; display: flex; flex-direction: column; pointer-events: none; }
+.rail ol { margin: auto 0; max-height: 100%; overflow-y: auto; scrollbar-width: none; pointer-events: auto; }
+.rail ol::-webkit-scrollbar { display: none; }
 .rail ol { display: grid; gap: 1px; }
 .rail a { display: flex; align-items: center; justify-content: flex-end; gap: 10px; height: 24px; padding-left: 12px; font: 700 13px/1 var(--sans); color: var(--ink3); text-decoration: none; }
 .rail a span { opacity: 0; transform: translateX(8px); transition: opacity 0.3s var(--reveal), transform 0.3s var(--reveal); white-space: nowrap; background: rgba(4, 4, 5, 0.85); padding: 5px 8px; border-radius: 6px; }
